@@ -5,8 +5,6 @@ Version:	1.5
 Release:	1
 License:	GPL
 Group:		Applications/Text
-Group(de):	Applikationen/Text
-Group(pl):	Aplikacje/Tekst
 Source0:	http://www.ctan.org/tex-archive/support/rtf2latex/%{name}.%{version}.tar.gz
 Patch0:		%{name}-reader.c-fix.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
