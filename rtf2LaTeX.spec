@@ -4,8 +4,7 @@ Name:		rtf2LaTeX
 Version:	1.5
 Release:	1
 Copyright:	GPL
-Group:		Tools
-Group(pl):	Narzêdzia
+Group:		Utilities/Text
 Source0:	%name.%version.tar.gz
 Patch0:		%name-reader.c-fix.patch
 #BuildRequires:	
