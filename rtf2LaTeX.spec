@@ -24,8 +24,8 @@ Konwerter plików z formatu RTF na LaTeX.
 %build
 cp Makefile.2LaTeX Makefile
 %{__make} \
-	CFLAGS="%{?debug:-g -O}%{!?debug:$RPM_OPT_FLAGS}" \
-	LDFLAGS="%{!?debug:-s}" \
+	CFLAGS="%{rpmcflags}" \
+	LDFLAGS="%{rpmldflags}" \
 	RTFDIR=%{_datadir}/rtf
 
 %install
