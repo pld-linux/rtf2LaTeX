@@ -2,7 +2,7 @@ Summary:	RTF to LaTeX converter
 Summary(pl):	Konwerter z formatu RTF na LaTeX
 Name:		rtf2LaTeX
 Version:	1.5
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Text
 Source0:	http://www.ctan.org/tex-archive/support/rtf2latex/%{name}.%{version}.tar.gz
