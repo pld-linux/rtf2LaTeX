@@ -1,5 +1,5 @@
-Summary:	RTF to LaTeX converter.
-Summary(pl):	Konwerter z formatu RTF na LaTeX.
+Summary:	RTF to LaTeX converter
+Summary(pl):	Konwerter z formatu RTF na LaTeX
 Name:		rtf2LaTeX
 Version:	1.5
 Release:	1
@@ -31,11 +31,12 @@ cp Makefile.2LaTeX Makefile
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,%{_datadir}/rtf}
-%{__make} prefix=$RPM_BUILD_ROOT%{_prefix} \
-    BINDIR=$RPM_BUILD_ROOT%{_bindir} \
-    MANDIR=$RPM_BUILD_ROOT%{_mandir}/man1 \
-    RTFDIR=$RPM_BUILD_ROOT%{_datadir}/rtf \
-    install
+
+%{__make} install \
+	prefix=$RPM_BUILD_ROOT%{_prefix} \
+	BINDIR=$RPM_BUILD_ROOT%{_bindir} \
+	MANDIR=$RPM_BUILD_ROOT%{_mandir}/man1 \
+	RTFDIR=$RPM_BUILD_ROOT%{_datadir}/rtf \
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -43,5 +44,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/%{name}
-%attr(644,root,root) %{_mandir}/man1/*
-%attr(644,root,root) %{_datadir}/rtf/*
+%{_mandir}/man1/*
+%{_datadir}/rtf
