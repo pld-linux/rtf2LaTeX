@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Applications/Text
 Source0:	http://www.ctan.org/tex-archive/support/rtf2latex/%{name}.%{version}.tar.gz
+# Source0-md5:	90964f786d149d314a57511ed9ceaaee
 Patch0:		%{name}-reader.c-fix.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
