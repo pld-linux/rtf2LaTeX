@@ -1,0 +1,11 @@
+--- reader.c.org	Fri Jul  2 10:13:56 1993
++++ reader.c	Tue Mar 21 12:50:58 2000
+@@ -118,7 +118,7 @@
+ static RTFStyle	*styleList = (RTFStyle *) NULL;
+ 
+ 
+-static FILE	*rtffp = stdin;
++static FILE	*rtffp;
+ 
+ 
+ /*
