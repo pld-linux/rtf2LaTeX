@@ -10,14 +10,13 @@ Source0:	%name.%version.tar.gz
 Patch0:		%name-reader.c-fix.patch
 #BuildRequires:	
 #Requires:	
-Buildroot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define	_prefix	/usr
 
 %description
 
 %description -l pl
-
 
 %prep
 %setup -q -n %name
