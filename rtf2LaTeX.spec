@@ -26,12 +26,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %build
 #./configure --prefix=%{_prefix}
 cp Makefile.2LaTeX Makefile
-make RPM_OPT_FLAGS="$RPM_OPT_FLAGS" RTFDIR=%{_datadir}/rtf
+%{__make} RPM_OPT_FLAGS="$RPM_OPT_FLAGS" RTFDIR=%{_datadir}/rtf
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,%{_datadir}/lib/rtf}
-make prefix=$RPM_BUILD_ROOT%{_prefix} \
+%{__make} prefix=$RPM_BUILD_ROOT%{_prefix} \
     BINDIR=$RPM_BUILD_ROOT%{_bindir} \
     MANDIR=$RPM_BUILD_ROOT%{_mandir}/man1 \
     RTFDIR=$RPM_BUILD_ROOT%{_datadir}/lib/rtf \
