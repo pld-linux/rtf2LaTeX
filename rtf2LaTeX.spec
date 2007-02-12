@@ -1,5 +1,5 @@
 Summary:	RTF to LaTeX converter
-Summary(pl):	Konwerter z formatu RTF na LaTeX
+Summary(pl.UTF-8):   Konwerter z formatu RTF na LaTeX
 Name:		rtf2LaTeX
 Version:	1.5
 Release:	3
@@ -13,8 +13,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 RTF to LaTeX converter.
 
-%description -l pl
-Konwerter plików z formatu RTF na LaTeX.
+%description -l pl.UTF-8
+Konwerter plikÃ³w z formatu RTF na LaTeX.
 
 %prep
 %setup -q -n %{name}
